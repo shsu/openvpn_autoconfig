@@ -19,6 +19,8 @@ apt-get install -qy openvpn curl iptables-persistent
 
 cd /etc/openvpn
 
+sleep 5
+
 # Certificate Authority
 >ca-key.pem      openssl genrsa 2048
 >ca-csr.pem      openssl req -new -key ca-key.pem -subj /CN=OpenVPN-CA/
